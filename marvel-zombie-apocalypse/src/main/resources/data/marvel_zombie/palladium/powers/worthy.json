@@ -1,0 +1,30 @@
+{
+  "name": {
+    "translate": "power.marvel_zombie.worthy"
+  },
+  "icon": "marvel_zombie:mjolnir",
+  "primary_color": "#F7D774",
+  "secondary_color": "#FFF3B0",
+  "abilities": {
+    "mjolnir_recall": {
+      "type": "palladium:dummy",
+      "title": {
+        "translate": "ability.marvel_zombie.mjolnir_recall"
+      },
+      "description": {
+        "translate": "ability.marvel_zombie.mjolnir_recall.description"
+      },
+      "icon": "minecraft:recovery_compass",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:held",
+            "cooldown": 20,
+            "key_type": "key_bind",
+            "needs_empty_hand": true
+          }
+        ]
+      }
+    }
+  }
+}

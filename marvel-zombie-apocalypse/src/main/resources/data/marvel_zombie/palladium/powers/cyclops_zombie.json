@@ -1,0 +1,33 @@
+{
+  "name": {
+    "translate": "power.marvel_zombie.cyclops_zombie"
+  },
+  "icon": "minecraft:ender_eye",
+  "primary_color": "#C62828",
+  "secondary_color": "#F44336",
+  "abilities": {
+    "optic_blast": {
+      "type": "palladium:energy_beam",
+      "icon": "minecraft:ender_eye",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "energy_beam": "marvel_zombie:cyclops_laser",
+      "damage": 1.8,
+      "max_distance": 32.0,
+      "speed": 0.12,
+      "commands_on_block_hit": [
+        "execute unless block ^ ^ ^-0.01 #minecraft:wither_immune run setblock ^ ^ ^-0.01 air destroy"
+      ],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:integer_property",
+            "property": "cyclops_beam_active",
+            "min": 1,
+            "max": 1
+          }
+        ]
+      }
+    }
+  }
+}

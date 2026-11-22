@@ -1,0 +1,17 @@
+{
+  "name": {
+    "translate": "power.marvel_zombie.captain_shield"
+  },
+  "icon": "marvel_zombie:captain_shield",
+  "primary_color": "#C62828",
+  "secondary_color": "#173B8F",
+  "abilities": {
+    "shield_armor": {
+      "type": "palladium:attribute_modifier",
+      "attribute": "minecraft:generic.armor",
+      "amount": 4.0,
+      "operation": 0,
+      "uuid": "e83bf34c-1457-44b5-8e37-62f47c203b24"
+    }
+  }
+}

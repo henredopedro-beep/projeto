@@ -1,0 +1,127 @@
+{
+  "name": {
+    "translate": "power.marvel_zombie.godofthunder"
+  },
+  "icon": "marvel_zombie:mjolnir",
+  "primary_color": "#4FA6E8",
+  "secondary_color": "#EAF8FF",
+  "energy_bars": {
+    "storm_energy": {
+      "color": "#45B9FF",
+      "max": 1000,
+      "auto_increase_per_tick": 0,
+      "auto_increase_interval": 8
+    }
+  },
+  "abilities": {
+    "charge_storm": {
+      "type": "palladium:dummy",
+      "title": {
+        "translate": "ability.marvel_zombie.charge_storm"
+      },
+      "description": {
+        "translate": "ability.marvel_zombie.charge_storm.description"
+      },
+      "icon": "minecraft:lightning_rod",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "cooldown": 2400,
+            "key_type": "key_bind",
+            "needs_empty_hand": false
+          },
+          {
+            "type": "palladium:energy_bar",
+            "energy_bar": "storm_energy",
+            "max": 0
+          }
+        ]
+      }
+    },
+    "mjolnir_spin": {
+      "type": "palladium:dummy",
+      "title": {
+        "translate": "ability.marvel_zombie.mjolnir_spin"
+      },
+      "description": {
+        "translate": "ability.marvel_zombie.mjolnir_spin.description"
+      },
+      "icon": "minecraft:iron_sword",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:held",
+            "cooldown": 0,
+            "key_type": "key_bind",
+            "needs_empty_hand": false
+          },
+          {
+            "type": "palladium:energy_bar",
+            "energy_bar": "storm_energy",
+            "max": 0
+          }
+        ]
+      }
+    },
+    "storm_slam": {
+      "type": "palladium:dummy",
+      "title": {
+        "translate": "ability.marvel_zombie.storm_slam"
+      },
+      "description": {
+        "translate": "ability.marvel_zombie.storm_slam.description"
+      },
+      "icon": "minecraft:lightning_rod",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "cooldown": 100,
+            "key_type": "key_bind",
+            "needs_empty_hand": false
+          },
+          {
+            "type": "palladium:energy_bar",
+            "energy_bar": "storm_energy",
+            "min": 1
+          }
+        ]
+      }
+    },
+    "thunder_bolt": {
+      "type": "palladium:energy_beam",
+      "title": {
+        "translate": "ability.marvel_zombie.thunder_bolt"
+      },
+      "description": {
+        "translate": "ability.marvel_zombie.thunder_bolt.description"
+      },
+      "icon": "minecraft:lightning_rod",
+      "bar_color": "light_blue",
+      "energy_beam": "marvel_zombie:mjolnir_lightning",
+      "damage": 20.0,
+      "max_distance": 28.0,
+      "speed": 0.12,
+      "energy_bar_usage": {
+        "energy_bar": "storm_energy",
+        "amount": 10
+      },
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:held",
+            "cooldown": 0,
+            "key_type": "key_bind",
+            "needs_empty_hand": false
+          },
+          {
+            "type": "palladium:energy_bar",
+            "energy_bar": "storm_energy",
+            "min": 1
+          }
+        ]
+      }
+    }
+  }
+}

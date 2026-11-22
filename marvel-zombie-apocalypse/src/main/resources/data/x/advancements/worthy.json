@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "worthy": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.x.worthy.description"
+    },
+    "frame": "challenge",
+    "icon": {
+      "item": "marvel_zombie:mjolnir"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.x.worthy"
+    }
+  },
+  "requirements": [
+    ["worthy"]
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": {
+    "translate": "power.marvel_zombie.sling_ring"
+  },
+  "icon": "minecraft:clock",
+  "primary_color": "#C96A28",
+  "secondary_color": "#FFD36A",
+  "abilities": {
+    "open_portal": {
+      "type": "palladium:attribute_modifier",
+      "title": {
+        "translate": "ability.marvel_zombie.open_portal"
+      },
+      "description": {
+        "translate": "ability.marvel_zombie.open_portal.description"
+      },
+      "icon": "minecraft:clock",
+      "attribute": "minecraft:generic.movement_speed",
+      "amount": 0.0,
+      "operation": 0,
+      "uuid": "f83d3f32-d251-4af1-97ba-11ab38e8e7d0",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action",
+            "cooldown": 0,
+            "key_type": "key_bind",
+            "needs_empty_hand": false
+          }
+        ]
+      }
+    }
+  }
+}
